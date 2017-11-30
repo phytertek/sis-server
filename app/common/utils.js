@@ -1,12 +1,12 @@
 module.exports = {
   objectFromExistingFields: fields =>
-    Object.keys(fields).reduce((r, f) => {
-      if (fields[f]) r[f] = fields[f]
-      return r
+    Object.keys(fields).reduce((obj, f) => {
+      if (fields[f]) obj[f] = fields[f];
+      return obj;
     }, {}),
   dbDocumentUpdateFromExistingFields: (dbDoc, fields) =>
     Object.keys(fields).reduce((doc, f) => {
-      if (fields[f] && doc[f]) doc[f] = fields[f]
-      return doc
+      if (fields[f] && doc[f]) doc[f] = fields[f];
+      return doc;
     }, dbDoc)
-}
+};

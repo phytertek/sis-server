@@ -1,6 +1,11 @@
 module.exports = {
   // App Components
   Components: {
+    Github: {
+      Schema: 'Add comments here',
+      Routes: 'Add comments here',
+      Services: 'Add comments here'
+    },
     Auth: {
       Schema: 'authentication user schema',
       Services: 'authenticatedRoute and decodeToken',
@@ -35,7 +40,9 @@ module.exports = {
     Host: process.env.HOST || 'http://localhost',
     Port: process.env.PORT || 3333,
     DatabaseName: process.env.DBNAME || 'server Dev DB',
-    DatabaseURI: process.env.DB_URI || 'mongodb://localhost/apier-dev',
+    DatabaseURI:
+      process.env.DB_URI ||
+      'mongodb://student:student@ds147544.mlab.com:47544/lambda-projects',
     JWTSecret: process.env.JWT_SECRET || 'e0COB<#tup&7yojCDr`)ZgBqe]3lm|iJ',
     BcryptCost: process.env.BCRYPT_COST || 11
   }
