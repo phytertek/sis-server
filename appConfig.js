@@ -31,12 +31,12 @@ module.exports = {
   // App Configuration
   Config: {
     Level: process.env.NODE_ENV || 'development',
-    Name: process.env.NAME || 'Apier',
+    Name: process.env.NAME || 'server',
     Host: process.env.HOST || 'http://localhost',
     Port: process.env.PORT || 3333,
-    DatabaseName: process.env.DBNAME || 'Apier Dev DB',
+    DatabaseName: process.env.DBNAME || 'server Dev DB',
     DatabaseURI: process.env.DB_URI || 'mongodb://localhost/apier-dev',
-    JWTSecret: process.env.JWT_SECRET || 'a super secure JWT secret',
+    JWTSecret: process.env.JWT_SECRET || 'e0COB<#tup&7yojCDr`)ZgBqe]3lm|iJ',
     BcryptCost: process.env.BCRYPT_COST || 11
   }
 };
